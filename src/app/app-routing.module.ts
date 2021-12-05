@@ -12,8 +12,12 @@ const routes: Routes = [
   {
     path: 'search',
     component: SearchComponent,
-    children: [{ path: 'info', component: SearchInfoComponent }],
+    children: [
+      { path: 'info', component: SearchInfoComponent },
+      { path: '**', redirectTo: '/home', pathMatch: 'full' },
+    ],
   },
+
   { path: '**', component: ErrorPageComponent },
 ];
 
