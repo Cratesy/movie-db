@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { SearchInfoComponent } from './search-info/search-info.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SearchComponent, ErrorPageComponent],
+  declarations: [AppComponent, HomeComponent, SearchComponent, ErrorPageComponent, SearchInfoComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
