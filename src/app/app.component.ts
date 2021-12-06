@@ -23,7 +23,12 @@ export class AppComponent implements OnInit {
       )
       .subscribe((response) => {
         this.response = response;
-        console.log(this.response);
+
+        console.log(response);
+
+        let responses = this.response.results;
+
+        console.log(responses);
       });
   }
 }

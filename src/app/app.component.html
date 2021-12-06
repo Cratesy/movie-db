@@ -19,5 +19,15 @@
     <button (click)="search()">Search</button>
   </div>
 
+  <!-- Card Component -->
+  <div *ngIf="response">
+    <div>
+      <p>Film Title: {{ this.response.results.original_title }}</p>
+      <ul *ngFor="let data of response">
+        <li>Film Title: {{ data.original_title }}</li>
+      </ul>
+    </div>
+  </div>
+
   <router-outlet></router-outlet>
 </div>
