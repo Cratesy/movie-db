@@ -1,33 +1,16 @@
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <img width="40" alt="Movie Logo" src="../favicon.ico" />
-  <span>Welcome to Movies & More!, Search for any Movie or Tv show.</span>
-  <div class="spacer"></div>
-  <button routerLink="/home" routerLinkActive="active">Home</button>
-</div>
+<!-- header -->
+<app-header></app-header>
 
 <div class="content" role="main">
   <!-- Search Bar -->
-  <div class="search">
-    <label>
-      <input
-        type="text"
-        placeholder="Search for a movie, tv show......"
-        [(ngModel)]="input"
-      />
-    </label>
-    <button (click)="search()">Search</button>
-  </div>
-
+  <app-search-bar></app-search-bar>
   <!-- Card Component -->
   <div *ngIf="response">
     <div>
-      <p>Film Title: {{ this.response.results.original_title }}</p>
-      <ul *ngFor="let data of response">
-        <li>Film Title: {{ data.original_title }}</li>
-      </ul>
+      <p *ngFor="let responseData of this.response.results">
+        Film Title: {{ responseData.original_title }}
+      </p>
     </div>
   </div>
-
   <router-outlet></router-outlet>
 </div>
