@@ -8,14 +8,23 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
-import { SearchInfoComponent } from './search-info/search-info.component';
+
 import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CardContainerComponent } from './components/card-container/card-container.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SearchComponent, ErrorPageComponent, SearchInfoComponent, HeaderComponent, ButtonComponent, CardContainerComponent, SearchBarComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    SearchComponent,
+    ErrorPageComponent,
+    HeaderComponent,
+    ButtonComponent,
+    CardContainerComponent,
+    SearchBarComponent,
+  ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
