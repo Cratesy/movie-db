@@ -1,8 +1,13 @@
 <p>search works!</p>
-<!-- Card Component
-<div *ngIf="response">
+<!-- Card Component -->
+<!-- <div *ngIf="response">
   <div>
-    <p>Film Title: {{ response.results.original_title }}</p>
+    <p>Film Title: {{ this.response.results.original_title }}</p>
+    <ul>
+      <li *ngFor="let responseData of this.response.results">
+        Film Title: {{ responseData.original_title }}
+      </li>
+    </ul>
   </div>
 </div> -->
 <router-outlet></router-outlet>

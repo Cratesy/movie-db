@@ -1,0 +1,15 @@
+<div class="search">
+  <label>
+    <input
+      type="text"
+      placeholder="Search for a movie, tv show......"
+      [(ngModel)]="input"
+    />
+  </label>
+  <app-button
+    text="Search"
+    (click)="search()"
+    routerLink="/search"
+    routerLinkActive="active"
+  ></app-button>
+</div>
