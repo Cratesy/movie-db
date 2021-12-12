@@ -4,13 +4,6 @@
 <div class="content" role="main">
   <!-- Search Bar -->
   <app-search-bar></app-search-bar>
-  <!-- Card Component -->
-  <div *ngIf="response">
-    <div>
-      <p *ngFor="let responseData of this.response.results">
-        Film Title: {{ responseData.original_title }}
-      </p>
-    </div>
-  </div>
+  <!-- routes for page change -->
   <router-outlet></router-outlet>
 </div>
